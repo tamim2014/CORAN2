@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="popTodo.css">
+</head>
+
+<body >
+    <h1> Module popTodo </h1>
+    <hr style="margin-bottom:30%">
+	
+	
+	<!-- pop todo : Extrait cahierGris.html (ligne215) -->
+	<div  class="popupTodo" onclick="openPopTodo()"><i class="remarqueSousLePuptodo" ><u>Remarque</u>: s45 - s47 &rArr;&ensp; <small>1/2</small><b>Juz</b> &emsp; Chrono &#128260;</i> 
+		<div  class="popuptextTodo" id="myPopupTodo">
+			<input id="task" style=""><button id="add">Add</button>
+			 ---------------------------------------------------
+			<div id="todos"></div>
+			<span class="close" onclick="closePopTodo()">&times;</span>
+		</div>
+	</div>
+	<!-- fin pop todo -->
+
+<script type="text/javascript" src="popTodo.js"></script>
+</body>
+</html>
