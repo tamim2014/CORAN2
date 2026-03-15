@@ -37,11 +37,32 @@
 			.page442{ margin-bottom:2.9em !important;  }
 			.page443{   font-size:1.19em !important;   }
 			.page444{ margin-bottom:4em !important;  }
-			.page445{ margin-bottom:3.5em !important;  }
-			
-			
+			.page445{ margin-bottom:3.5em !important;  }          
+		}
+        .scrolbar {
+		  overflow-y: scroll;  overflow-x: hidden;  
+		  max-height:476.5em;
+		}
 
-            
+		/* Largeur de la scrollbar */
+		.scrolbar::-webkit-scrollbar {
+		  width: 10px;
+		}
+		
+
+		/* Le canal (la piste) */
+		.scrolbar::-webkit-scrollbar-track {
+		  background:#888;   /* couleur du canal */
+		  border-radius: 3px;   /* arrondi du canal */
+		}
+
+		/* Le bouton (le thumb) */
+		.scrolbar::-webkit-scrollbar-thumb {
+		  background:#aaa  ;       /* couleur du thumb */
+		  border-radius: 3px;    /* arrondi du thumb */
+		  
+		  /* border: 1px solid transparent;  réduit visuellement le thumb */
+           background-clip: content-box;  /* garde la couleur au centre */
 		}		
 							
 	</style>
@@ -180,7 +201,8 @@
 	</div>
 
 	<div id="contenu">
-		<div class="colone-laterale" id="sidbarG">
+		<div class=" scrolbar colone-laterale" id="sidbarG"  >
+  
 		    <h2 class="grosTitre" style="padding:1.2em 0em !important;" >
 			   <span class="box-shadow-titre" style="padding:0.3em;"><small class="numSourate" style="padding:0 1em;" >S. 35</small></span>
 			   <span class="box-shadow-titre" >LE CRÉATEUR</span>
@@ -188,9 +210,9 @@
 			</h2>
 			<div class="planche plancheFrance" >
 						
-				<!-- <div class="pageGauche" style="height:95.75em; line-height:1.94; box-shadow:0px 8px 6px -2px gray; "> -->
-				<div class="pageGauche" style="height:83.85em; line-height:1.93; box-shadow:0px 8px 6px -2px gray; ">
-					<p style="padding-bottom:1.5em; padding-top:1em; line-height:1.56;" class="verset45">
+				<!-- <div class="pageGauche" style="height:95.75em; 83.85em line-height:1.94; box-shadow:0px 8px 6px -2px gray; "> -->
+				<div class="pageGauche" style="height:84em; line-height:1.93; box-shadow:0px 8px 6px -2px gray; ">
+					<p style="padding-bottom:0.90em; padding-top:1em; line-height:1.56;" class="verset45">
                         Et si Allah s’en prenait aux gens pour ce qu’ils acquièrent, Il ne laisserait à la surface [de la terre] aucun être vivant. Mais Il leur donne un délai jusqu’à un terme fixé. Puis quand leur terme viendra... (Il se saisira d’eux) car Allah est Très Clairvoyant sur Ses serviteurs. <span id="s36debut">(45)</span>			
 					</p>					
 					
