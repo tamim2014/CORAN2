@@ -211,18 +211,18 @@
 		function changeImage(element){
 
 			  if(v == "img/anas_.png")
-				 v = "img/istihfar.png"; 
-			  else 
 				 v = "img/swsV.jpg";
+			  else 
+				 v = "img/istihfar.png";
 				 x.setAttribute("src", v);
 		}
 		actionSWS.onclick=function(){
-            actionTASBIH.innerHTML=" ...................... أستغفرٱللّٰ"; 		            		
+            actionTASBIH.innerHTML=" ............. اللهم صل على محمد"; 		            		
             changeImage(this);
 			loop = 0;  count_ = 0;
 			actionLp_.innerHTML = "Loop &#10227;"; action_.innerHTML= "count";
-            if(v == "img/swsV.jpg")	{
-			  actionTASBIH.innerHTML=" ............ اللهم صل على محمدٰه"; 
+            if(v == "img/istihfar.png")	{
+			  actionTASBIH.innerHTML=" ...................... أستغفرٱللّٰه"; 
 			  x.setAttribute("src", v);
 			}		
 		};
