@@ -98,3 +98,36 @@
   -moz-animation: interpage ease-in infinite alternate 500ms;
   animation: interpage ease-in infinite alternate 500ms;
 }
+
+
+	/* ##################################### Mobil ########################################## */
+	
+	@media screen and (max-width: 786px) {
+		/* On cache la traduction ( temporairement⚠️) */
+		/* Voir comment quran explorer gere la traduction⚠️ */
+		#sidbarG{
+		   display:none;
+		}
+		/* Gestion de police de caractère arabe */
+		.pageDroite p{
+			font-size:1.1 rem !important;
+			/* Quelle police de caractère utilise Mouslim Pro pour le texte arabe ?
+			📱 Sur Android Tu as 5 polices disponibles :
+				📌 Style Uthmani (Médine)
+				KFGQPC Uthmanic Script
+				Mushaf Al-Madina
+				Scheherazade New
+				Amiri Quran
+
+				📌 Style IndoPak
+				Noor-e-Hidayat
+				PDMS Saleem Quran
+			*/
+			font-family: Noor-e-Hidayat !important;
+		}
+		
+		/* reduction de la marge séparant les pages => KO  ça prend pas*/
+		.pageDroite {
+			margin-bottom:.1em !important;
+		}
+	}
